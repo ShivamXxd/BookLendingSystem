@@ -1,0 +1,27 @@
+.navArea {
+  padding: 0.8rem 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.backToHome {
+  margin-left: 1.5rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.backToHomeText {
+  text-decoration: none !important;
+}
+
+.backArrow {
+  font-size: 1.5rem;
+  margin-right: 0.4rem;
+}
+
+.sideArrow {
+  font-size: 1.3rem;
+}

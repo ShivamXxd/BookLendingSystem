@@ -1,0 +1,82 @@
+.shadowBack {
+  position: fixed;
+  height: 1100px;
+  width: 100%;
+  background-color: rgb(153, 153, 153);
+  opacity: 0.4;
+  z-index: 10;
+}
+
+.window {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 300px;
+  width: 50%;
+  font-size: 1.1rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(67, 67, 67);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 11;
+}
+
+.loginFirstWindow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.successWindow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.okButton {
+  height: 45px;
+  width: 100px;
+  background-color: #ff6a00;
+  border: 1px solid #770000;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.okButton:active {
+  background-color: #ee3312;
+}
+
+.backToLogin {
+  height: 45px;
+  width: 125px;
+  background-color: #ff6a00;
+  border: 1px solid #770000;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.backToLogin:active {
+  background-color: #ee3312;
+}
+
+.windowMessage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.exclamation {
+  margin: 0 10px;
+  color: orangered;
+  font-size: 1.5rem;
+}

@@ -1,0 +1,197 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 40px;
+  box-sizing: border-box;
+}
+
+.straightline {
+  width: 2px;
+  height: 75vh;
+  background-color: #b8b8b8;
+}
+
+.logo {
+  height: 50px;
+  width: inherit;
+}
+
+.welcomeSection {
+  width: 40%;
+  text-align: center;
+  margin-left: 30px;
+}
+
+.welcomeText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.illustration {
+  max-height: 300px;
+  margin-bottom: 20px;
+}
+
+.welcomeText {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.welcomeSubtitle {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.signinSection {
+  width: 40%;
+  height: inherit;
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+.signinHeading {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 30px;
+}
+
+.signinDescription {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.inputField {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.nextButton {
+  width: 80%;
+  padding: 10px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nextButton:hover {
+  background-color: #c0392b;
+}
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.inputField {
+  width: 100%;
+  padding: 10px 40px 10px 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.sideIcon {
+  font-size: 21px;
+  position: absolute;
+  top: 40%;
+  right: 15px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.sideIcon:hover {
+  color: #555;
+}
+
+.signupPrompt {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.signupPrompt span {
+  margin-right: 5px;
+}
+
+.signupLink {
+  color: #e74c3c;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.signupLink:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 850px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .welcomeSection {
+    display: none;
+  }
+  .signinSection {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .inputField {
+    width: 100%;
+  }
+
+  .nextButton {
+    width: 100%;
+  }
+  .straightline {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .signinHeading {
+    font-size: 20px;
+  }
+  .welcomeSection {
+    display: none;
+  }
+  .signinDescription {
+    font-size: 14px;
+  }
+
+  .inputField {
+    padding: 10px;
+  }
+
+  .sideIcon {
+    font-size: 18px;
+  }
+  .straightline {
+    display: none;
+  }
+}

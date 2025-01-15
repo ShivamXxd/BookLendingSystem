@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light Mode (Default) */
+body {
+  background-color: #fdf2d9;
+  color: black;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #515151;
+  color: white;
+}

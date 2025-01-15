@@ -1,0 +1,77 @@
+.filterSelector {
+  position: relative;
+  display: inline-block;
+}
+
+.filterDropDownWrapper {
+  position: relative;
+}
+
+.filterDropDown {
+  text-align: center;
+  padding: 10px 0;
+  width: 100px;
+  background-color: #ff6a00;
+  border: 1px solid #770000;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.05rem;
+  user-select: none;
+}
+
+.filterDropDown:active {
+  background-color: #ee3312;
+}
+
+.filterContent {
+  display: block;
+  position: absolute;
+  background-color: #ffeaa6;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+  margin-top: 8px;
+}
+
+.filterContent div {
+  padding: 12px 16px;
+  cursor: pointer;
+}
+
+.romance,
+.horror,
+.literature,
+.history,
+.science,
+.all {
+  padding: 8px 16px;
+  cursor: pointer;
+  color: black;
+}
+
+.romance:hover {
+  background-color: #ff3333;
+}
+
+.literature:hover {
+  background-color: #747474;
+}
+
+.horror:hover {
+  background-color: #b80000;
+}
+
+.science:hover {
+  background-color: #00e8f4;
+}
+
+.history:hover {
+  background-color: #d36724;
+}
+
+.all:hover {
+  background-color: #c2e902;
+}

@@ -1,0 +1,51 @@
+.container {
+  border-top: 3px solid orange;
+  margin-top: 1.5rem;
+  padding: 1rem 0;
+  background-color: rgb(53, 53, 53);
+  color: rgb(161, 161, 161);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.links > * > * {
+  width: fit-content;
+}
+
+.contact > *,
+.supportLinks > * {
+  margin: 10px 0;
+}
+.supportLinks > *:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.icons {
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+}
+
+.icons > * {
+  cursor: pointer;
+}

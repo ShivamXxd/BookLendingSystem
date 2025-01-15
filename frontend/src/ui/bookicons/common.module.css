@@ -1,0 +1,92 @@
+.book {
+  height: 140px;
+  width: 110px;
+  perspective: 1000px;
+}
+
+.bookCover {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  transition: transform 0.8s ease;
+  z-index: 3;
+}
+
+.book:hover .bookCover {
+  transform: rotateY(-30deg);
+}
+
+.bookFront {
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 0 5px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+.bookSide {
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 20px;
+  height: 100%;
+  background: url("/bookimages/pages_texture.jpg") repeat-y center center;
+  background-size: cover;
+  transform: rotateY(80deg);
+  transform-origin: left;
+  box-shadow: 5px 0 5px rgba(0, 0, 0, 0.3);
+}
+.iconTop {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 110px;
+  /* height: 50px; */
+  overflow: hidden;
+}
+.iconBottom {
+  position: absolute;
+  margin-top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 110px;
+  height: 50px;
+  overflow: visible;
+}
+.bookName {
+  font-size: 1rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-text-stroke: 0.7px;
+  -webkit-text-stroke-color: black;
+  z-index: 3;
+}
+
+.img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.character {
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 110px;
+  height: 140px;
+  z-index: 2;
+}

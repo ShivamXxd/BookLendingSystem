@@ -1,0 +1,513 @@
+[
+  {
+    "name": "Whispers of the Wind",
+    "authorName": "Luna Skye",
+    "lendingPrice": 2.5,
+    "stock": 30,
+    "category": "Fiction"
+  },
+  {
+    "name": "The Silver Chronicles",
+    "authorName": "Thorne Kingsley",
+    "lendingPrice": 3.0,
+    "stock": 20,
+    "category": "Fiction"
+  },
+  {
+    "name": "A Dance of Stars",
+    "authorName": "Althea Gray",
+    "lendingPrice": 2.0,
+    "stock": 15,
+    "category": "Fiction"
+  },
+  {
+    "name": "The Last Ember",
+    "authorName": "Ryder Stone",
+    "lendingPrice": 2.7,
+    "stock": 25,
+    "category": "Fiction"
+  },
+  {
+    "name": "Echoes of Tomorrow",
+    "authorName": "Kaelen Drake",
+    "lendingPrice": 3.5,
+    "stock": 10,
+    "category": "Fiction"
+  },
+  {
+    "name": "Whispers of the Past",
+    "authorName": "Isla Rivers",
+    "lendingPrice": 1.5,
+    "stock": 50,
+    "category": "Literature"
+  },
+  {
+    "name": "Fate's Embrace",
+    "authorName": "Oliver Cross",
+    "lendingPrice": 2.0,
+    "stock": 30,
+    "category": "Literature"
+  },
+  {
+    "name": "The Broken Path",
+    "authorName": "Calla Drake",
+    "lendingPrice": 2.5,
+    "stock": 40,
+    "category": "Literature"
+  },
+  {
+    "name": "A Song for the Soul",
+    "authorName": "Dorian Night",
+    "lendingPrice": 3.0,
+    "stock": 25,
+    "category": "Literature"
+  },
+  {
+    "name": "Dawn's Reflection",
+    "authorName": "Mira Ashford",
+    "lendingPrice": 1.8,
+    "stock": 45,
+    "category": "Literature"
+  },
+  {
+    "name": "The Last Witness",
+    "authorName": "Jaxon O'Neal",
+    "lendingPrice": 2.9,
+    "stock": 50,
+    "category": "History"
+  },
+  {
+    "name": "Shadows in the Dark",
+    "authorName": "Cora Valen",
+    "lendingPrice": 3.3,
+    "stock": 30,
+    "category": "History"
+  },
+  {
+    "name": "The Silent Betrayal",
+    "authorName": "Maxim Quinn",
+    "lendingPrice": 3.1,
+    "stock": 25,
+    "category": "History"
+  },
+  {
+    "name": "Whispers of Deception",
+    "authorName": "Lucia Dorne",
+    "lendingPrice": 3.0,
+    "stock": 35,
+    "category": "History"
+  },
+  {
+    "name": "The Crimson Hour",
+    "authorName": "Asher Blackwood",
+    "lendingPrice": 3.5,
+    "stock": 20,
+    "category": "History"
+  },
+  {
+    "name": "The Timeless Truth",
+    "authorName": "Julius Hale",
+    "lendingPrice": 2.5,
+    "stock": 35,
+    "category": "Science"
+  },
+  {
+    "name": "Whispers of Reason",
+    "authorName": "Liora Lark",
+    "lendingPrice": 3.0,
+    "stock": 25,
+    "category": "Science"
+  },
+  {
+    "name": "The Mirror of Knowledge",
+    "authorName": "Gideon Faye",
+    "lendingPrice": 2.8,
+    "stock": 30,
+    "category": "Science"
+  },
+  {
+    "name": "The Path of Enlightenment",
+    "authorName": "Marcel Voltaire",
+    "lendingPrice": 3.2,
+    "stock": 20,
+    "category": "Science"
+  },
+  {
+    "name": "Awakening the Soul",
+    "authorName": "Seren Vale",
+    "lendingPrice": 3.5,
+    "stock": 10,
+    "category": "Science"
+  },
+  {
+    "name": "Waves of Time",
+    "authorName": "Nina Frost",
+    "lendingPrice": 3.0,
+    "stock": 20,
+    "category": "Science"
+  },
+  {
+    "name": "The Last Horizon",
+    "authorName": "Arden Stark",
+    "lendingPrice": 3.7,
+    "stock": 15,
+    "category": "Science"
+  },
+  {
+    "name": "Into the Unknown",
+    "authorName": "Rhea Starfire",
+    "lendingPrice": 3.1,
+    "stock": 30,
+    "category": "Science"
+  },
+  {
+    "name": "The Quantum Paradox",
+    "authorName": "Elias Wilder",
+    "lendingPrice": 3.2,
+    "stock": 25,
+    "category": "Science"
+  },
+  {
+    "name": "Starlight Awakening",
+    "authorName": "Valeria Nightshade",
+    "lendingPrice": 2.9,
+    "stock": 20,
+    "category": "Science"
+  },
+  {
+    "name": "The Sea of Tears",
+    "authorName": "Olivia Storm",
+    "lendingPrice": 2.0,
+    "stock": 30,
+    "category": "History"
+  },
+  {
+    "name": "The King's Secret",
+    "authorName": "Gareth Moon",
+    "lendingPrice": 2.8,
+    "stock": 25,
+    "category": "History"
+  },
+  {
+    "name": "Echoes from the Past",
+    "authorName": "Adeline Frost",
+    "lendingPrice": 2.5,
+    "stock": 20,
+    "category": "History"
+  },
+  {
+    "name": "Beneath the Stars",
+    "authorName": "Cillian Voss",
+    "lendingPrice": 3.0,
+    "stock": 15,
+    "category": "History"
+  },
+  {
+    "name": "The Phantom Sword",
+    "authorName": "Amara Blythe",
+    "lendingPrice": 3.3,
+    "stock": 20,
+    "category": "History"
+  },
+  {
+    "name": "The Shadow's Edge",
+    "authorName": "Vera Lynx",
+    "lendingPrice": 2.4,
+    "stock": 28,
+    "category": "Fiction"
+  },
+  {
+    "name": "The Iron Throne",
+    "authorName": "Orin Drake",
+    "lendingPrice": 3.0,
+    "stock": 22,
+    "category": "Fiction"
+  },
+  {
+    "name": "The Forgotten City",
+    "authorName": "Xander Fury",
+    "lendingPrice": 2.6,
+    "stock": 33,
+    "category": "Fiction"
+  },
+  {
+    "name": "Whispers of the Heart",
+    "authorName": "Eliana Rosewood",
+    "lendingPrice": 5,
+    "stock": 12,
+    "category": "Romance"
+  },
+  {
+    "name": "Beneath the Starlit Sky",
+    "authorName": "Julian Crestfall",
+    "lendingPrice": 6,
+    "stock": 8,
+    "category": "Romance"
+  },
+  {
+    "name": "Forever and a Sunrise",
+    "authorName": "Aurora Valentine",
+    "lendingPrice": 7,
+    "stock": 10,
+    "category": "Romance"
+  },
+  {
+    "name": "The Secret of Us",
+    "authorName": "Carter Halloway",
+    "lendingPrice": 4,
+    "stock": 15,
+    "category": "Romance"
+  },
+  {
+    "name": "Echoes of Love",
+    "authorName": "Sophia Marigold",
+    "lendingPrice": 5,
+    "stock": 11,
+    "category": "Romance"
+  },
+  {
+    "name": "Chasing the Horizon",
+    "authorName": "Evan Rivers",
+    "lendingPrice": 6,
+    "stock": 9,
+    "category": "Romance"
+  },
+  {
+    "name": "In Your Embrace",
+    "authorName": "Lila Thornwood",
+    "lendingPrice": 7,
+    "stock": 7,
+    "category": "Romance"
+  },
+  {
+    "name": "Letters from Yesterday",
+    "authorName": "Grayson Willow",
+    "lendingPrice": 5,
+    "stock": 10,
+    "category": "Romance"
+  },
+  {
+    "name": "When Hearts Collide",
+    "authorName": "Fiona Everdeen",
+    "lendingPrice": 6,
+    "stock": 8,
+    "category": "Romance"
+  },
+  {
+    "name": "The Melody of Us",
+    "authorName": "Noah Starling",
+    "lendingPrice": 4,
+    "stock": 14,
+    "category": "Romance"
+  },
+  {
+    "name": "Dancing with Dreams",
+    "authorName": "Isla Moonstone",
+    "lendingPrice": 5,
+    "stock": 13,
+    "category": "Romance"
+  },
+  {
+    "name": "A Love Unwritten",
+    "authorName": "Caleb Nightingale",
+    "lendingPrice": 7,
+    "stock": 6,
+    "category": "Romance"
+  },
+  {
+    "name": "Falling for Forever",
+    "authorName": "Emilia Hartwell",
+    "lendingPrice": 6,
+    "stock": 9,
+    "category": "Romance"
+  },
+  {
+    "name": "Beyond the Garden Gate",
+    "authorName": "Landon Ashford",
+    "lendingPrice": 5,
+    "stock": 10,
+    "category": "Romance"
+  },
+  {
+    "name": "Timeless Whispers",
+    "authorName": "Victoria Swan",
+    "lendingPrice": 6,
+    "stock": 12,
+    "category": "Romance"
+  },
+  {
+    "name": "The Maze of Despair",
+    "authorName": "Lana Zephyr",
+    "lendingPrice": 2.5,
+    "stock": 31,
+    "category": "Literature"
+  },
+  {
+    "name": "The Hallowed Halls",
+    "authorName": "Victor Redford",
+    "lendingPrice": 2.9,
+    "stock": 29,
+    "category": "Literature"
+  },
+  {
+    "name": "Faded Pages",
+    "authorName": "Melina Reed",
+    "lendingPrice": 3.0,
+    "stock": 25,
+    "category": "Literature"
+  },
+  {
+    "name": "The Secret Keepers",
+    "authorName": "Felix Morrigan",
+    "lendingPrice": 3.3,
+    "stock": 28,
+    "category": "Literature"
+  },
+  {
+    "name": "Echoes of Silence",
+    "authorName": "Adriana Vale",
+    "lendingPrice": 3.0,
+    "stock": 20,
+    "category": "Literature"
+  },
+  {
+    "name": "The Echoing Silence",
+    "authorName": "Bryce Harrow",
+    "lendingPrice": 3.5,
+    "stock": 24,
+    "category": "History"
+  },
+  {
+    "name": "The Scarlet Lie",
+    "authorName": "Carla Finch",
+    "lendingPrice": 3.1,
+    "stock": 25,
+    "category": "History"
+  },
+  {
+    "name": "The Silent Witness",
+    "authorName": "Nathaniel Ashford",
+    "lendingPrice": 2.9,
+    "stock": 33,
+    "category": "History"
+  },
+  {
+    "name": "Beneath the Veil",
+    "authorName": "Roxanne Cross",
+    "lendingPrice": 3.2,
+    "stock": 30,
+    "category": "History"
+  },
+  {
+    "name": "The Dark Reflection",
+    "authorName": "Oscar Lynx",
+    "lendingPrice": 3.0,
+    "stock": 22,
+    "category": "History"
+  },
+  {
+    "name": "Whispers of the Grave",
+    "authorName": "Damien Hollow",
+    "lendingPrice": 18,
+    "stock": 5,
+    "category": "Horror"
+  },
+  {
+    "name": "Haunted Shadows",
+    "authorName": "Lila Dreadmoor",
+    "lendingPrice": 15,
+    "stock": 7,
+    "category": "Horror"
+  },
+  {
+    "name": "The Crimson Pact",
+    "authorName": "Victor Blackthorn",
+    "lendingPrice": 20,
+    "stock": 3,
+    "category": "Horror"
+  },
+  {
+    "name": "Echoes of the Damned",
+    "authorName": "Serena Gloom",
+    "lendingPrice": 16,
+    "stock": 6,
+    "category": "Horror"
+  },
+  {
+    "name": "The Wailing Woods",
+    "authorName": "Harper Vane",
+    "lendingPrice": 14,
+    "stock": 9,
+    "category": "Horror"
+  },
+  {
+    "name": "Midnight Apparition",
+    "authorName": "Felix Gravedust",
+    "lendingPrice": 17,
+    "stock": 4,
+    "category": "Horror"
+  },
+  {
+    "name": "Tales of the Forsaken",
+    "authorName": "Evelyn Nightshade",
+    "lendingPrice": 19,
+    "stock": 2,
+    "category": "Horror"
+  },
+  {
+    "name": "Blood in the Fog",
+    "authorName": "Gideon Nocturne",
+    "lendingPrice": 22,
+    "stock": 8,
+    "category": "Horror"
+  },
+  {
+    "name": "The Howling Abyss",
+    "authorName": "Raven Harrow",
+    "lendingPrice": 18,
+    "stock": 6,
+    "category": "Horror"
+  },
+  {
+    "name": "Phantom's Lament",
+    "authorName": "Lyra Shade",
+    "lendingPrice": 13,
+    "stock": 5,
+    "category": "Horror"
+  },
+  {
+    "name": "Curse of the Undying",
+    "authorName": "Malachi Dreadfield",
+    "lendingPrice": 21,
+    "stock": 4,
+    "category": "Horror"
+  },
+  {
+    "name": "The Specter's Mark",
+    "authorName": "Sienna Murkwood",
+    "lendingPrice": 15,
+    "stock": 7,
+    "category": "Horror"
+  },
+  {
+    "name": "Silent Screams",
+    "authorName": "Corbin Graves",
+    "lendingPrice": 20,
+    "stock": 3,
+    "category": "Horror"
+  },
+  {
+    "name": "The Devil's Manuscript",
+    "authorName": "Alaric Darkmoor",
+    "lendingPrice": 23,
+    "stock": 2,
+    "category": "Horror"
+  },
+  {
+    "name": "Veil of Terror",
+    "authorName": "Selene Blackridge",
+    "lendingPrice": 19,
+    "stock": 6,
+    "category": "Horror"
+  }
+]

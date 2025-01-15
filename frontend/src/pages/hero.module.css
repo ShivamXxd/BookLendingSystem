@@ -1,0 +1,114 @@
+.container {
+  position: relative;
+  min-height: 70vh;
+}
+
+.flexBooksContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 10% 0 15%;
+}
+
+.gridBooksContainer {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin: 0 10% 0 15%;
+}
+
+.gridBooksContainer > * {
+  width: 100% !important;
+}
+
+.topPicks,
+.deals {
+  width: 100%;
+}
+
+.topPicksContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.dealsContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.topPicksText,
+.dealsText {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  color: orange;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: rgb(155, 1, 1);
+}
+
+.filter {
+  position: absolute;
+  top: 2rem;
+  left: 2.5%;
+}
+
+.darkSpaceFiller {
+  position: absolute;
+  top: 45%;
+  left: 40%;
+  font-size: 3rem;
+  color: rgb(47, 47, 47);
+}
+.lightSpaceFiller {
+  position: absolute;
+  top: 45%;
+  left: 40%;
+  font-size: 3rem;
+  color: rgb(237, 237, 237);
+}
+
+.selectedFilterDisplay {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.selectedFilterText {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  color: orange;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: rgb(155, 1, 1);
+}
+
+.selectedFilterImg {
+  height: 250px;
+  width: 250px;
+}
+
+.historyImg {
+  height: 180px;
+  width: 250px;
+}
+
+.horrorImg {
+  height: 250px;
+  width: 230px;
+}
+
+.topPicksCard {
+  background-color: red;
+}
+
+.searchedBook {
+  align-self: flex-start;
+}
