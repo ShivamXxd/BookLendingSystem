@@ -50,10 +50,6 @@ app.get("/books", async (req, res) => {
   const books = await bookModel.find();
   res.json(books);
 });
-app.get("/users", async (req, res) => {
-  const users = await userModel.find();
-  res.json(users);
-});
 
 app.post("/user/register", async (req, res) => {
   const saltRounds = 10;

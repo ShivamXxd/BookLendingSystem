@@ -33,14 +33,7 @@ function Cart() {
         <div className={classes.cartContentArea}>
           <div className={classes.booksContainer}>
             {cartAddedBooks.map((book, index) => (
-              <CartCard
-                name={book.name}
-                authorName={book.authorName}
-                lendingPrice={book.lendingPrice}
-                category={book.category}
-                key={index}
-                removeCurrentBook={() => handleRemoveBook(book.name)} // Pass the remove function
-              />
+              <CartCard name={book.name} authorName={book.authorName} lendingPrice={book.lendingPrice} category={book.category} key={index} removeCurrentBook={() => handleRemoveBook(book.name)} />
             ))}
           </div>
           <CartPayment />
