@@ -39,7 +39,7 @@ function Cart() {
                 lendingPrice={book.lendingPrice}
                 category={book.category}
                 key={index}
-                removeCurrentBook={() => handleRemoveBook(book.name)} // Pass the remove function
+                removeCurrentBook={() => handleRemoveBook(book.name)}
               />
             ))}
           </div>
