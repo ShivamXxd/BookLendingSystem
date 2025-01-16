@@ -8,14 +8,26 @@ import { useAuth } from "../context/logincontext";
 import { useMode } from "../context/modecontext";
 import classes from "./header.module.css";
 import { FaUserCircle } from "react-icons/fa";
+import { jwtDecode } from "jwt-decode";
 
 function Header() {
   const { cartCount } = useCart();
   const { isDark, switchModes } = useMode();
   const { books, setFoundBook } = useBooks();
   const [searchQuery, setSearchQuery] = useState("");
-  const { isLoggedIn, setIsLoggedIn, currentUser } = useAuth();
+  const { isLoggedIn, setIsLoggedIn, currentUser, setCurrentUser } = useAuth();
   const navigate = useNavigate();
+  const token = localStorage.getItem("authtoken");
+
+  useEffect(() => {
+    if (token) {
+      const decoded = jwtDecode(token);
+      setCurrentUser(decoded);
+      setIsLoggedIn(true);
+    } else {
+      setIsLoggedIn(false);
+    }
+  }, [token]);
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
@@ -42,6 +54,12 @@ function Header() {
 
   const handleLoginChange = () => {
     setIsLoggedIn(!isLoggedIn);
+    if (isLoggedIn) {
+      localStorage.removeItem("authtoken");
+      navigate("/login");
+    } else {
+      navigate("/login");
+    }
   };
 
   return (

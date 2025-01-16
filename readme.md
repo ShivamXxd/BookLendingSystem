@@ -12,6 +12,7 @@ How to Run the project:
 - Run "nodemon start" command in backend, use "cd backend" to go there.
 - Run "npm run dev" command in frontend, use "cd frontend" to go there.
 - Click on "http://localhost:5173" in your frontend terminal to open the website.
+- Make sure you have a MongoDB Database named "BookLendingSystem" with collections named "users" and "books", add books.json file as import in your books collection.
 
 UI/UX:
 When user is not logged in:
@@ -57,7 +58,7 @@ Authentication Flow:
 - When the user clicks on logout, the jwt token will be removed and on refresh user will have to login again.
 - As mentioned earlier, user cannot buy books until they're authenticated and is logged into the site.
 
-Challenges faced with solution:
+Challenges faced, with solution:
 
 - Faced difficulty in learning context API. But managed to catch onto it.
 - CSS difficulties, the modal backdrop was not taking full height of website even on position: fixed and height: 100%. But fixed it using height in pixels and negative margins.

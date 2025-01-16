@@ -3,9 +3,11 @@ const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
+const jwt = require("jsonwebtoken");
 const app = express();
 const PORT = process.env.PORT;
 const MONGOURI = process.env.MONGOURI;
+const JWT_SECRET = process.env.JWT_SECRET;
 
 app.use(
   cors({
@@ -83,6 +85,16 @@ app.post("/user/login", async (req, res) => {
   if (foundUser) {
     const validatedUser = bcrypt.compare(password, foundUser.password);
     if (validatedUser) {
+      const token = jwt.sign(
+        {
+          firstName: foundUser.firstName,
+          lastName: foundUser.lastName,
+          address: foundUser.address,
+          phno: foundUser.phno,
+        },
+        JWT_SECRET,
+        { expiresIn: "1h" }
+      );
       res.status(200).json({
         message: "User Validated!",
         user: {
@@ -92,6 +104,7 @@ app.post("/user/login", async (req, res) => {
           address: foundUser.address,
           phno: foundUser.phno,
         },
+        token: token,
       });
     } else {
       res.status(500).json({ message: "Failed to Validate User!" });

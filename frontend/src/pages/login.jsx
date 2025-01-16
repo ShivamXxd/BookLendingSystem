@@ -25,7 +25,7 @@ function Login() {
     });
     const data = await response.json();
     if (response.ok) {
-      setCurrentUser(data.user);
+      localStorage.setItem("authtoken", data.token);
       setIsLoggedIn(true);
       setAllowLogin(true);
       navigate("/");
