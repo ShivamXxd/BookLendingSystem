@@ -8,7 +8,7 @@ import CartPayment from "../components/cartPayment";
 
 function Cart() {
   const [booksInCart, setBooksInCart] = useState(false);
-  const { decreaseCartCount, cartAddedBooks, setCartAddedBooks } = useCart();
+  const { decreaseCartCount, cartAddedBooks, setCartAddedBooks, setCartBooksWithPrice } = useCart();
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -18,6 +18,9 @@ function Cart() {
   const handleRemoveBook = (bookName) => {
     decreaseCartCount();
     setCartAddedBooks((prevBooks) => {
+      return prevBooks.filter((book) => book.name !== bookName);
+    });
+    setCartBooksWithPrice((prevBooks) => {
       return prevBooks.filter((book) => book.name !== bookName);
     });
   };
