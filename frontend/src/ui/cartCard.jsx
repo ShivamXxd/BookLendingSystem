@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import { useCart } from "../context/cartcontext";
 import { useMode } from "../context/modecontext";
 import History from "./bookicons/history";
@@ -9,7 +9,7 @@ import Science from "./bookicons/science";
 import classes from "./cartCard.module.css";
 import Counter from "./counter";
 
-function CartCard({ name, authorName, lendingPrice, category }) {
+function CartCard({ name, authorName, lendingPrice, category, removeCurrentBook }) {
   const [totalPrice, setTotalPrice] = useState(lendingPrice);
   const { isDark } = useMode();
   const { setCartBooksWithPrice } = useCart();
@@ -47,6 +47,9 @@ function CartCard({ name, authorName, lendingPrice, category }) {
           Shipping Charges: <span style={{ color: "#00d100" }}>FREE</span>
         </div>
       </div>
+      <button className={classes.removeButton} onClick={removeCurrentBook}>
+        Remove
+      </button>
     </div>
   );
 }

@@ -11,6 +11,7 @@ function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const { setIsLoggedIn, setCurrentUser } = useAuth();
+  const [allowLogin, setAllowLogin] = useState(null);
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
@@ -24,11 +25,13 @@ function Login() {
     });
     const data = await response.json();
     if (response.ok) {
-      setIsLoggedIn(true);
       setCurrentUser(data.user);
+      setIsLoggedIn(true);
+      setAllowLogin(true);
       navigate("/");
     } else {
       setIsLoggedIn(false);
+      setAllowLogin(false);
     }
   };
 
@@ -46,6 +49,7 @@ function Login() {
         <div className={classes.signinSection}>
           <div className={classes.signinTitle}>Login!</div>
           <div className={classes.signinText}>Please enter details to Sign in</div>
+          {allowLogin == false && <div className={classes.invalidUser}>Invalid User! Please enter again!</div>}
           <div className={classes.inputWrapper}>
             <input
               type="text"
@@ -68,7 +72,7 @@ function Login() {
                 setPassword(e.target.value);
               }}
             />
-            {showPassword ? <FaEyeSlash className={classes.sideIcon} onClick={togglePasswordVisibility} /> : <FaEye className={classes.sideIcon} onClick={togglePasswordVisibility} />}
+            {showPassword ? <FaEye className={classes.sideIcon} onClick={togglePasswordVisibility} /> : <FaEyeSlash className={classes.sideIcon} onClick={togglePasswordVisibility} />}
           </div>
           <button className={classes.nextButton} onClick={handleLogin}>
             LOGIN

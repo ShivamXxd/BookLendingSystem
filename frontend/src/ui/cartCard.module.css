@@ -7,6 +7,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  position: relative;
 }
 
 .bookDetails {
@@ -30,6 +31,24 @@
 .shippingCharges {
   font-size: 0.85rem;
   color: #5d5d5d;
+}
+
+.removeButton {
+  position: absolute;
+  bottom: 8%;
+  right: 4%;
+  padding: 6px 13px;
+  background-color: #df0000;
+  border-radius: 3px;
+  border: 1px solid #7b0000;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.removeButton:active {
+  background-color: #7b0000;
 }
 
 @media (max-width: 850px) {

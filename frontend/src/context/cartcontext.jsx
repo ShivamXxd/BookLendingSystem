@@ -11,7 +11,11 @@ export const CartProvider = ({ children }) => {
     setCartCount((prevCount) => prevCount + 1);
   };
 
-  return <CartContext.Provider value={{ cartCount, increaseCartCount, cartAddedBooks, setCartAddedBooks, cartBooksWithPrice, setCartBooksWithPrice }}>{children}</CartContext.Provider>;
+  const decreaseCartCount = () => {
+    setCartCount((prevCount) => prevCount - 1);
+  };
+
+  return <CartContext.Provider value={{ cartCount, increaseCartCount, decreaseCartCount, cartAddedBooks, setCartAddedBooks, cartBooksWithPrice, setCartBooksWithPrice }}>{children}</CartContext.Provider>;
 };
 
 export const useCart = () => useContext(CartContext);

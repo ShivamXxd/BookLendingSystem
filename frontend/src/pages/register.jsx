@@ -109,7 +109,7 @@ function Register() {
                   setPassword(e.target.value);
                 }}
               />
-              {showPassword ? <FaEyeSlash className={classes.sideIcon} onClick={togglePasswordVisibility} /> : <FaEye className={classes.sideIcon} onClick={togglePasswordVisibility} />}
+              {showPassword ? <FaEye className={classes.sideIcon} onClick={togglePasswordVisibility} /> : <FaEyeSlash className={classes.sideIcon} onClick={togglePasswordVisibility} />}
             </div>
             <div className={classes.inputWrapper}>
               <input

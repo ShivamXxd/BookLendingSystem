@@ -10,7 +10,7 @@ const MONGOURI = process.env.MONGOURI;
 app.use(
   cors({
     origin: "http://localhost:5173",
-    methods: ["GET", "POST"],
+    methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
     credentials: true,
   })
 );
@@ -102,6 +102,26 @@ app.post("/user/login", async (req, res) => {
     }
   } else {
     res.status(404).json({ message: "User not Found!" });
+  }
+});
+
+app.patch("/user/patch", async (req, res) => {
+  const updatedUser = req.body;
+  try {
+    await userModel.findOneAndUpdate({ email: updatedUser.email }, { $set: updatedUser }, { new: true, runValidators: true });
+    res.status(200).json({ message: "User Updated" });
+  } catch {
+    res.status(500).json({ message: "Failed to Update User" });
+  }
+});
+
+app.delete("/user/delete", async (req, res) => {
+  const { email } = req.body;
+  try {
+    await userModel.findOneAndDelete({ email: email });
+    res.status(200).json({ message: "User deleted successfully" });
+  } catch {
+    res.status(500).json({ message: "Failed to delete" });
   }
 });
 

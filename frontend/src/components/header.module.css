@@ -124,6 +124,12 @@
   background-color: #ee3312;
 }
 
+.profileIcon {
+  font-size: 2rem;
+  color: #464646;
+  cursor: pointer;
+}
+
 /* -------------------------------------------------------- */
 
 .modeContainer {

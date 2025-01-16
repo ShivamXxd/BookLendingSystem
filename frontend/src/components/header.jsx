@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import { FaMoon, FaSearch, FaSun, FaUser } from "react-icons/fa";
 import { MdOutlineShoppingCart } from "react-icons/md";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useBooks } from "../context/bookcontext";
 import { useCart } from "../context/cartcontext";
 import { useAuth } from "../context/logincontext";
 import { useMode } from "../context/modecontext";
 import classes from "./header.module.css";
+import { FaUserCircle } from "react-icons/fa";
 
 function Header() {
   const { cartCount } = useCart();
@@ -14,6 +15,7 @@ function Header() {
   const { books, setFoundBook } = useBooks();
   const [searchQuery, setSearchQuery] = useState("");
   const { isLoggedIn, setIsLoggedIn, currentUser } = useAuth();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
@@ -34,6 +36,7 @@ function Header() {
         }
       });
       setSearchQuery("");
+      navigate("/");
     } else return;
   };
 
@@ -49,7 +52,7 @@ function Header() {
         </Link>
 
         <div className={classes.welcomeUserBox}>
-          {currentUser && (
+          {isLoggedIn && (
             <>
               <div className={classes.welcomeText}>Welcome, </div>
               <div className={classes.currentUserName}>{currentUser.firstName.charAt(0).toUpperCase() + currentUser.firstName.slice(1).toLowerCase()}</div>
@@ -83,6 +86,11 @@ function Header() {
             <FaUser /> {isLoggedIn ? <div>Log Out</div> : <div>Sign In</div>}
           </Link>
         </div>
+        {isLoggedIn && (
+          <div className={classes.userProfileContainer}>
+            <FaUserCircle className={classes.profileIcon} onClick={() => navigate("/userprofile")} />
+          </div>
+        )}
       </header>
     </>
   );

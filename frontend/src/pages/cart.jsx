@@ -8,12 +8,19 @@ import CartPayment from "../components/cartPayment";
 
 function Cart() {
   const [booksInCart, setBooksInCart] = useState(false);
-  const { cartAddedBooks } = useCart();
+  const { decreaseCartCount, cartAddedBooks, setCartAddedBooks } = useCart();
   const navigate = useNavigate();
 
   useEffect(() => {
     setBooksInCart(cartAddedBooks.length > 0);
   }, [cartAddedBooks]);
+
+  const handleRemoveBook = (bookName) => {
+    decreaseCartCount();
+    setCartAddedBooks((prevBooks) => {
+      return prevBooks.filter((book) => book.name !== bookName);
+    });
+  };
 
   const handleContinueShopping = () => {
     navigate("/");
@@ -26,7 +33,14 @@ function Cart() {
         <div className={classes.cartContentArea}>
           <div className={classes.booksContainer}>
             {cartAddedBooks.map((book, index) => (
-              <CartCard name={book.name} authorName={book.authorName} lendingPrice={book.lendingPrice} category={book.category} key={index} />
+              <CartCard
+                name={book.name}
+                authorName={book.authorName}
+                lendingPrice={book.lendingPrice}
+                category={book.category}
+                key={index}
+                removeCurrentBook={() => handleRemoveBook(book.name)} // Pass the remove function
+              />
             ))}
           </div>
           <CartPayment />

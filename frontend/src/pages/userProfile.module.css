@@ -1,0 +1,77 @@
+.container {
+  min-height: 60vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 3%;
+}
+
+.headingText {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+.inputFields {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.inputField {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+
+.inputLabel {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.inputField > * {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.updateButton {
+  padding: 8px 25px;
+  background-color: #ff6a00;
+  border: 1px solid #770000;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.updateButton:active {
+  background-color: #ee3312;
+}
+
+.deleteButton {
+  padding: 10px 25px;
+  background-color: #dc0b00;
+  border: 1px solid #6c0101;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.deleteButton:active {
+  background-color: #ee3312;
+}
