@@ -186,3 +186,79 @@
   clip-path: inset(50%);
   white-space: nowrap;
 }
+
+/* Responsive Design with Media Queries */
+
+/* For small devices (e.g., phones) */
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 15px 10px;
+  }
+
+  .logoContainer {
+    margin-left: 0;
+  }
+
+  .searchContainer {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .searchInput {
+    width: 90%;
+    font-size: 0.9rem;
+  }
+
+  .searchButton {
+    width: auto;
+    padding: 8px 16px;
+  }
+
+  .welcomeUserBox {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .cartContainer,
+  .signInContainer,
+  .modeContainer {
+    margin-top: 10px;
+  }
+
+  .cartButton {
+    font-size: 1.5rem;
+  }
+
+  .signInButton {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+
+  .profileIcon {
+    font-size: 1.5rem;
+  }
+}
+
+/* For medium devices (tablets) */
+@media screen and (max-width: 1024px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .searchContainer {
+    width: 60%;
+  }
+
+  .cartContainer,
+  .signInContainer {
+    margin-left: 10px;
+  }
+
+  .searchInput {
+    font-size: 1rem;
+  }
+}

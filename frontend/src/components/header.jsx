@@ -27,7 +27,7 @@ function Header() {
     } else {
       setIsLoggedIn(false);
     }
-  }, [token]);
+  }, []);
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
@@ -51,7 +51,6 @@ function Header() {
       navigate("/");
     } else return;
   };
-
   const handleLoginChange = () => {
     setIsLoggedIn(!isLoggedIn);
     if (isLoggedIn) {
@@ -70,7 +69,7 @@ function Header() {
         </Link>
 
         <div className={classes.welcomeUserBox}>
-          {isLoggedIn && (
+          {isLoggedIn && currentUser && (
             <>
               <div className={classes.welcomeText}>Welcome, </div>
               <div className={classes.currentUserName}>{currentUser.firstName.charAt(0).toUpperCase() + currentUser.firstName.slice(1).toLowerCase()}</div>
