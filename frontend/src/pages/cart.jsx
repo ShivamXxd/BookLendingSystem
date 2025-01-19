@@ -25,10 +25,6 @@ function Cart() {
     });
   };
 
-  const handleContinueShopping = () => {
-    navigate("/");
-  };
-
   return (
     <div className={classes.container}>
       <NavArea />
@@ -45,7 +41,7 @@ function Cart() {
         <div className={classes.emptyCartArea}>
           <img className={classes.emptyCartIcon} src="/emptycart.png" alt="Empty Cart" />
           <div className={classes.emptyCartText}>Your Cart is Empty!</div>
-          <button className={classes.emptyCartButton} onClick={handleContinueShopping}>
+          <button className={classes.emptyCartButton} onClick={() => navigate("/")}>
             Continue Shopping
           </button>
         </div>

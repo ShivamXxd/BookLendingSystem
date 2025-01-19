@@ -130,6 +130,16 @@
   cursor: pointer;
 }
 
+.hamburger {
+  font-size: 1.5rem;
+  margin-right: 3%;
+  cursor: pointer;
+}
+.cross {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
 /* -------------------------------------------------------- */
 
 .modeContainer {
@@ -187,24 +197,75 @@
   white-space: nowrap;
 }
 
+.remainingHeader {
+  position: absolute;
+  top: 70px;
+  right: 0;
+  width: 180px;
+  background-color: rgb(255, 243, 191);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  color: black;
+  z-index: 5;
+}
+
+.RHCart,
+.RHLoginButton,
+.RHModes,
+.RHUserProfile {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  align-items: center;
+  cursor: pointer;
+}
+
+.RHModes {
+  cursor: default;
+  padding: 5px 0;
+}
+
+.RHThemeToggle {
+  height: 35px;
+  width: 35px;
+}
+
+.RHCart:hover,
+.RHLoginButton:hover,
+.RHModes:hover,
+.RHUserProfile:hover {
+  background-color: #4e4e4e;
+  color: white;
+}
+
 /* Responsive Design with Media Queries */
 
 /* For small devices (e.g., phones) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
   .header {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     height: auto;
     padding: 15px 10px;
   }
-
+  .logo {
+    height: 40px;
+  }
   .logoContainer {
     margin-left: 0;
   }
-
   .searchContainer {
     width: 100%;
-    margin-top: 10px;
   }
 
   .searchInput {
@@ -239,6 +300,10 @@
 
   .profileIcon {
     font-size: 1.5rem;
+  }
+
+  .hamburger {
+    margin-right: 0;
   }
 }
 

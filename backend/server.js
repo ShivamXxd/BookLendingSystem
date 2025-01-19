@@ -5,13 +5,15 @@ const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const app = express();
+
 const PORT = process.env.PORT;
 const MONGOURI = process.env.MONGOURI;
 const JWT_SECRET = process.env.JWT_SECRET;
+const ORIGIN = process.env.ORIGIN;
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: ORIGIN,
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
     credentials: true,
   })
@@ -91,19 +93,13 @@ app.post("/user/login", async (req, res) => {
           lastName: foundUser.lastName,
           address: foundUser.address,
           phno: foundUser.phno,
+          email: foundUser.email,
         },
         JWT_SECRET,
         { expiresIn: "1h" }
       );
       res.status(200).json({
         message: "User Validated!",
-        user: {
-          firstName: foundUser.firstName,
-          lastName: foundUser.lastName,
-          email: foundUser.email,
-          address: foundUser.address,
-          phno: foundUser.phno,
-        },
         token: token,
       });
     } else {
@@ -117,8 +113,8 @@ app.post("/user/login", async (req, res) => {
 app.patch("/user/patch", async (req, res) => {
   const updatedUser = req.body;
   try {
-    await userModel.findOneAndUpdate({ email: updatedUser.email }, { $set: updatedUser }, { new: true, runValidators: true });
-    res.status(200).json({ message: "User Updated" });
+    const updated = await userModel.findOneAndUpdate({ email: updatedUser.email }, { $set: updatedUser }, { new: true, runValidators: true });
+    res.status(200).json({ message: "User Updated", updatedUser: updated });
   } catch {
     res.status(500).json({ message: "Failed to Update User" });
   }

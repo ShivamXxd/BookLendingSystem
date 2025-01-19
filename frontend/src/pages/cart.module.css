@@ -12,15 +12,6 @@
   width: 50%;
 }
 
-.paymentContainer {
-  width: 35%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  align-self: flex-start;
-}
-
 .emptyCartArea {
   display: flex;
   justify-content: center;

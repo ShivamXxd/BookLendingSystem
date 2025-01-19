@@ -5,7 +5,7 @@ import classes from "./userProfile.module.css";
 
 function UserProfile() {
   const patchUrl = "http://localhost:3000/user/patch";
-  const { currentUser } = useAuth();
+  const { currentUser, setCurrentUser } = useAuth();
   const [userObj, setUserObj] = useState({});
   const [confirmWindow, setConfirmWindow] = useState(false);
 
@@ -23,15 +23,16 @@ function UserProfile() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (userObj !== currentUser) {
+    if (Object.keys(userObj).some((key) => userObj[key] !== currentUser[key])) {
       const response = await fetch(patchUrl, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(userObj),
+        body: JSON.stringify({ ...userObj, email: currentUser.email }),
       });
       const data = await response.json();
       if (response.ok) {
         alert(data.message);
+        setCurrentUser(data.updatedUser);
       } else {
         alert(data.message);
       }
