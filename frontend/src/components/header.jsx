@@ -75,7 +75,6 @@ function Header() {
     };
   }, []);
 
-  console.log(windowWidth);
   let username = "";
   if (isLoggedIn && currentUser) {
     username = currentUser.firstName.charAt(0).toUpperCase() + currentUser.firstName.slice(1).toLowerCase();
@@ -87,15 +86,13 @@ function Header() {
           <img src="/logo.png" alt="Logo" className={classes.logo} />
         </Link>
 
-        {windowWidth > 1170 && (
-          <div className={classes.welcomeUserBox}>
-            {isLoggedIn && currentUser && (
-              <>
-                <div className={classes.welcomeText}>Welcome, </div>
-                <div className={classes.currentUserName}>{username}</div>
-              </>
-            )}
-          </div>
+        {windowWidth > 1170 && isLoggedIn && (
+          <>
+            <div className={classes.welcomeUserBox}>
+              <div className={classes.welcomeText}>Welcome, </div>
+              <div className={classes.currentUserName}>{username}</div>
+            </div>
+          </>
         )}
 
         <div className={classes.searchContainer}>

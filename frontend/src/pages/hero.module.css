@@ -136,6 +136,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+  .lightSpaceFiller,
+  .darkSpaceFiller {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -169,6 +173,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+  .lightSpaceFiller,
+  .darkSpaceFiller {
+    position: static;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media (max-width: 650px) {
   .flexBooksContainer,
@@ -190,5 +202,9 @@
   .topPicksText,
   .dealsText {
     text-align: center;
+  }
+  .lightSpaceFiller,
+  .darkSpaceFiller {
+    display: none;
   }
 }
