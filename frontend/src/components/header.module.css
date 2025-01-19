@@ -133,11 +133,13 @@
 .hamburger {
   font-size: 1.5rem;
   margin-right: 3%;
+  color: black;
   cursor: pointer;
 }
 .cross {
   font-size: 1.5rem;
   cursor: pointer;
+  color: black;
 }
 
 /* -------------------------------------------------------- */

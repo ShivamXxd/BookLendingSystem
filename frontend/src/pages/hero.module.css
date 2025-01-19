@@ -139,10 +139,14 @@
 }
 
 @media (max-width: 1200px) {
-  .flexBooksContainer,
-  .gridBooksContainer {
+  .flexBooksContainer {
     margin: 0 5%;
-    width: 70%;
+  }
+  .gridBooksContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 0;
+    width: 100%;
   }
   .topPicksContainer,
   .dealsContainer {
@@ -151,9 +155,14 @@
   }
 }
 @media (max-width: 950px) {
-  .flexBooksContainer,
-  .gridBooksContainer {
+  .flexBooksContainer {
     margin: 0 5%;
+  }
+  .gridBooksContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    margin-left: 0;
   }
   .topPicksContainer,
   .dealsContainer {
@@ -165,6 +174,11 @@
   .flexBooksContainer,
   .gridBooksContainer {
     margin: 0 3%;
+  }
+  .gridBooksContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
   }
   .topPicksContainer,
   .dealsContainer {

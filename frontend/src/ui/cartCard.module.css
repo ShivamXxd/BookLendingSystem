@@ -66,4 +66,8 @@
   .bookIcon {
     margin: 1rem 0;
   }
+  .removeButton {
+    position: static;
+    align-self: center;
+  }
 }

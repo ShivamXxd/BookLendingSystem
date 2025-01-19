@@ -49,3 +49,9 @@
 .icons > * {
   cursor: pointer;
 }
+
+@media (max-width: 650px) {
+  .supportLinks {
+    margin-left: 1rem;
+  }
+}
