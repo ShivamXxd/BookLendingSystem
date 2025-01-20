@@ -122,9 +122,14 @@ app.patch("/user/patch", async (req, res) => {
 
 app.delete("/user/delete", async (req, res) => {
   const { email } = req.body;
+  const userFound = await userModel.findOne({ email: email });
   try {
-    await userModel.findOneAndDelete({ email: email });
-    res.status(200).json({ message: "User deleted successfully" });
+    if (userFound) {
+      await userModel.findOneAndDelete({ email: email });
+      res.status(200).json({ message: "User deleted successfully" });
+    } else {
+      res.status(404).json({ message: "User not Found" });
+    }
   } catch {
     res.status(500).json({ message: "Failed to delete" });
   }
